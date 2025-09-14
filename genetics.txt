@@ -1,0 +1,544 @@
+Course_Code: BT301
+Course_Name: Genetic Engineering & Applications
+Institute: Indian Institute of Technology (IIT)
+Department: Bioengineering
+Year: B.Tech 3rd Year
+
+###
+Slide_ID: 1
+Module: 1 - Fundamentals of Molecular Genetics
+Title: The Central Dogma: A Modern Perspective
+
+Content:
+The central dogma of molecular biology, originally proposed by Francis Crick, describes the flow of genetic information.
+Core Pathway: DNA -> RNA -> Protein.
+1.    **Replication**: The process of copying a DNA molecule to produce two identical DNA molecules.
+        * Enzyme: DNA Polymerase.
+        * Fidelity is key; proofreading mechanisms exist.
+        * Model: Semiconservative. Each new DNA molecule contains one old strand and one new strand.
+2.    **Transcription**: Synthesis of an RNA molecule from a DNA template.
+        * Enzyme: RNA Polymerase.
+        * Product: Messenger RNA (mRNA), Transfer RNA (tRNA), Ribosomal RNA (rRNA), and other non-coding RNAs.
+3.    **Translation**: Synthesis of a polypeptide (protein) from an mRNA template.
+        * Machinery: Ribosomes.
+        * Requires tRNA to bring specific amino acids corresponding to mRNA codons.
+Special Pathways:
+* **Reverse Transcription**: RNA -> DNA. Seen in retroviruses (e.g., HIV). Enzyme: Reverse Transcriptase. This is a cornerstone of modern biotechnology (e.g., creating cDNA).
+* **RNA Replication**: RNA -> RNA. Seen in some viruses.
+* **Direct DNA to Protein Translation**: Experimentally demonstrated in cell-free systems but not a natural major pathway.
+
+###
+Slide_ID: 2
+Module: 1 - Fundamentals of Molecular Genetics
+Title: Gene Architecture: Prokaryotes vs. Eukaryotes
+
+Content:
+**Prokaryotic Gene Structure:**
+* Simple and compact.
+* Genes are often organized into **operons** (e.g., *lac* operon, *trp* operon). An operon is a functional unit of DNA containing a cluster of genes under the control of a single promoter.
+* Contains a **Promoter** (-35 and -10 boxes, e.g., Pribnow box), an **Operator** (binding site for repressor), and structural genes.
+* No **introns** (non-coding sequences). Transcription and translation are coupled and occur in the cytoplasm.
+
+**Eukaryotic Gene Structure:**
+* Complex and fragmented.
+* Each gene typically has its own promoter.
+* **Exons**: Coding sequences.
+* **Introns**: Non-coding sequences that are removed during RNA processing.
+* **Promoter**: Core promoter (e.g., TATA box at ~-25) and proximal control elements.
+* **Regulatory Elements**:
+        * **Enhancers**: DNA sequences that increase the rate of transcription. Can be located far upstream, downstream, or within an intron.
+        * **Silencers**: DNA sequences that decrease or suppress transcription.
+* **Post-Transcriptional Modifications**: Occur in the nucleus before translation.
+        1.    **5' Capping**: Addition of a 7-methylguanosine cap. Protects mRNA from degradation and aids in ribosome binding.
+        2.    **3' Polyadenylation**: Addition of a poly-A tail (~50-250 adenine residues). Increases stability and aids in export from the nucleus.
+        3.    **Splicing**: Removal of introns by the spliceosome complex. Alternative splicing can generate multiple protein isoforms from a single gene.
+
+###
+Slide_ID: 3
+Module: 2 - The Genetic Engineer's Toolkit
+Title: Restriction Endonucleases (REs): The Molecular Scissors
+
+Content:
+Restriction enzymes are endonucleases that recognize specific DNA sequences (recognition sites) and cleave the DNA at or near these sites.
+* **Discovery**: Found in bacteria as a defense mechanism against bacteriophages (viral DNA is "restricted" and destroyed). The bacterium's own DNA is protected by methylation.
+* **Nomenclature**: Derived from the source organism. E.g., *Eco*RI from *Escherichia coli*, strain R, first enzyme identified.
+* **Types**:
+        * **Type I**: Cleave at random sites far from the recognition sequence. Require ATP. Not useful for gene cloning.
+        * **Type II**: Cleave within or at specific short, often palindromic, recognition sites. Require Mg2+. **These are the workhorses of molecular cloning.**
+        * **Type III**: Cleave at a short distance from the recognition sequence. Require ATP.
+* **Recognition Sites**: Typically 4, 6, or 8 base pairs and palindromic (reads the same 5' to 3' on both strands).
+        * Example (*Eco*RI): 5'-G|AATTC-3'
+                                                      3'-CTTAA|G-5'
+* **Types of Cuts**:
+        1.    **Sticky Ends (Cohesive Ends)**: Produce a 5' or 3' overhang.
+                * *Eco*RI produces a 5' overhang: 5'-G and AATTC-3'
+                * *Pst*I produces a 3' overhang: 5'-CTGCA and G-3'
+                * Advantageous for directional cloning.
+        2.    **Blunt Ends**: Cut straight across the DNA backbone.
+                * *Sma*I: 5'-CCC|GGG-3'
+                                              3'-GGG|CCC-5'
+                * Ligation is less efficient but useful when no suitable restriction sites are available.
+
+###
+Slide_ID: 4
+Module: 2 - The Genetic Engineer's Toolkit
+Title: DNA Ligase and Other Modifying Enzymes
+
+Content:
+**DNA Ligase: The Molecular Glue**
+* Function: Catalyzes the formation of a phosphodiester bond between the 3'-hydroxyl of one nucleotide and the 5'-phosphate of another.
+* Role in vivo: Joins Okazaki fragments during DNA replication and participates in DNA repair.
+* Role in vitro: Joins DNA fragments together, e.g., inserting a gene into a plasmid.
+* Most commonly used: **T4 DNA Ligase**. Isolated from bacteriophage T4. Can join both sticky ends and blunt ends. Requires ATP as a cofactor.
+* Ligation of sticky ends is much more efficient than blunt ends due to transient base pairing that holds the fragments together.
+
+**Other Key Modifying Enzymes:**
+* **Alkaline Phosphatase (e.g., CIP, SAP)**:
+        * Function: Removes the 5'-phosphate group from a DNA molecule.
+        * Application: Used to treat digested vectors to prevent self-ligation (re-circularization without an insert), thereby reducing background in a cloning experiment.
+* **Polynucleotide Kinase (PNK)**:
+        * Function: Adds a phosphate group to the 5'-hydroxyl end of a DNA/RNA molecule. The reverse of phosphatase.
+        * Application: Used for radiolabeling probes or for phosphorylating PCR products or synthetic oligonucleotides to enable their ligation.
+* **Taq Polymerase**:
+        * A thermostable DNA polymerase isolated from *Thermus aquaticus*.
+        * Essential for Polymerase Chain Reaction (PCR) as it can withstand the high temperatures required for DNA denaturation.
+* **Reverse Transcriptase**:
+        * An RNA-dependent DNA polymerase.
+        * Function: Synthesizes a complementary DNA (cDNA) strand from an RNA template.
+        * Application: Essential for creating cDNA libraries and for techniques like RT-PCR.
+
+###
+Slide_ID: 5
+Module: 3 - Recombinant DNA Technology
+Title: Cloning Vectors: Vehicles for DNA Delivery
+
+Content:
+A vector is a DNA molecule used as a vehicle to artificially carry foreign genetic material into another cell, where it can be replicated and/or expressed.
+**Essential Features of a Cloning Vector:**
+1.    **Origin of Replication (ori)**: A DNA sequence that allows the vector to be replicated independently within the host cell. The type of ori determines the copy number (high vs. low).
+2.    **Selectable Marker**: A gene that confers a trait suitable for selection, e.g., antibiotic resistance (amp^R, tet^R). Allows identification of cells that have successfully taken up the vector.
+3.    **Multiple Cloning Site (MCS) / Polylinker**: A short DNA sequence containing multiple unique restriction enzyme recognition sites. This provides flexibility for inserting a gene of interest.
+
+**Types of Vectors:**
+* **Plasmids**:
+        * Small, circular, extrachromosomal DNA molecules found in bacteria.
+        * Insert size: up to ~15 kb.
+        * Examples: **pBR322** (early plasmid, tet^R and amp^R genes), **pUC series** (pUC18/19, high copy number, blue-white screening).
+* **Bacteriophages (Phages)**:
+        * Viruses that infect bacteria.
+        * Insert size: up to ~25 kb (e.g., Lambda phage).
+        * DNA is packaged into viral particles, which are highly efficient at delivering DNA into bacteria.
+* **Cosmids**:
+        * Hybrid vectors containing a plasmid ori, a selectable marker, and the *cos* sites from lambda phage.
+        * Insert size: ~30-45 kb.
+* **Bacterial Artificial Chromosomes (BACs)**:
+        * Based on the F-plasmid of *E. coli*.
+        * Insert size: ~150-350 kb. Stable, low copy number.
+        * Used in large-scale genome sequencing projects (e.g., Human Genome Project).
+* **Yeast Artificial Chromosomes (YACs)**:
+        * Contain yeast ori (ARS), centromere (CEN), and telomeres (TEL). Behave like a chromosome in yeast.
+        * Insert size: >1 Mb (1,000 kb).
+        * Used for cloning very large DNA fragments but can be unstable.
+
+###
+Slide_ID: 6
+Module: 3 - Recombinant DNA Technology
+Title: The Cloning Workflow & Blue-White Screening
+
+Content:
+**Basic Steps of Gene Cloning:**
+1.    **Preparation of Insert**: The gene of interest (GOI) is isolated. This can be done by PCR amplification or by restriction digestion from a source DNA.
+2.    **Preparation of Vector**: The plasmid vector is digested with the same restriction enzyme(s) used for the insert. This creates compatible ends.
+3.    **Ligation**: The insert and the linearized vector are mixed together with T4 DNA Ligase and ATP. The ligase joins the fragments, creating a recombinant plasmid.
+4.    **Transformation**: The ligation mixture is introduced into competent host cells (usually *E. coli*). Common methods are heat shock (using CaCl2) or electroporation.
+5.    **Selection & Screening**: Cells are plated on a selective medium (e.g., agar with an antibiotic) to select for transformants. Further screening is needed to identify colonies with the recombinant plasmid.
+
+**Blue-White Screening:**
+A powerful screening technique used with vectors like pUC18/19.
+* **Principle**: Based on the disruption of the *lacZ?* gene located in the MCS.
+* **Mechanism**:
+        * The host *E. coli* strain is engineered to express the omega fragment of the ?-galactosidase enzyme.
+        * The plasmid carries the *lacZ?* gene, which codes for the alpha fragment.
+        * When both fragments are present, they combine (**?-complementation**) to form a functional ?-galactosidase enzyme.
+        * The plating medium contains the antibiotic (for selection) and **X-gal**, a colorless chromogenic substrate for ?-galactosidase.
+* **Outcomes**:
+        * **Non-recombinant plasmid (vector self-ligated)**: *lacZ?* is intact. Functional enzyme is produced. X-gal is cleaved to produce a blue-colored product. **Colonies are BLUE.**
+        * **Recombinant plasmid (vector + insert)**: The gene of interest is inserted into the MCS, disrupting the *lacZ?* gene. No functional alpha fragment is made. No functional ?-galactosidase. X-gal is not cleaved. **Colonies are WHITE.**
+* **Conclusion**: White colonies are picked as they likely contain the desired recombinant plasmid.
+
+###
+Slide_ID: 7
+Module: 4 - Core Analytical Techniques
+Title: Polymerase Chain Reaction (PCR)
+
+Content:
+PCR is a revolutionary in vitro technique for the exponential amplification of a specific DNA segment.
+**Key Components:**
+1.    **DNA Template**: The DNA molecule containing the target sequence to be amplified.
+2.    **Primers**: Two short, single-stranded DNA oligonucleotides (forward and reverse) that are complementary to the 3' ends of the target DNA segment. They provide the starting point for DNA synthesis.
+3.    **DNA Polymerase**: A thermostable polymerase (e.g., Taq polymerase) that synthesizes new DNA strands.
+4.    **dNTPs**: Deoxynucleoside triphosphates (dATP, dCTP, dGTP, dTTP), the building blocks for the new DNA strands.
+5.    **Buffer with Mg2+**: Provides the optimal chemical environment for the polymerase activity. Mg2+ is a critical cofactor.
+
+**The PCR Cycle (repeated 25-35 times):**
+1.    **Denaturation** (~95°C): The double-stranded DNA template is heated to separate it into two single strands.
+2.    **Annealing** (~55-65°C): The temperature is lowered to allow the primers to bind (anneal) to their complementary sequences on the single-stranded DNA template. The annealing temperature (Ta) is critical and is calculated based on primer melting temperature (Tm).
+3.    **Extension/Elongation** (~72°C): The temperature is raised to the optimal temperature for the DNA polymerase. The polymerase attaches to the primers and synthesizes a new DNA strand complementary to the template.
+
+**Result**: Each cycle doubles the amount of the target DNA sequence, leading to exponential amplification (2^n, where n = number of cycles). After ~30 cycles, over a billion copies of the target sequence can be produced from a single starting molecule.
+
+###
+Slide_ID: 8
+Module: 4 - Core Analytical Techniques
+Title: Blotting and DNA Sequencing
+
+Content:
+**Blotting Techniques:**
+A method for transferring DNA, RNA, or proteins from an electrophoresis gel to a solid membrane (e.g., nitrocellulose, PVDF) for further analysis.
+* **Southern Blotting**:
+        * Analyte: **DNA**.
+        * Purpose: To detect a specific DNA sequence in a complex mixture of DNA fragments.
+        * Workflow: DNA is digested, separated by agarose gel electrophoresis, transferred to a membrane, and then probed with a labeled DNA probe.
+        * Application: RFLP analysis, gene mapping.
+* **Northern Blotting**:
+        * Analyte: **RNA**.
+        * Purpose: To study gene expression by detecting and quantifying a specific mRNA transcript.
+        * Workflow: Similar to Southern blot, but starts with RNA. Gel is denaturing.
+        * Application: Gene expression studies.
+* **Western Blotting (Immunoblotting)**:
+        * Analyte: **Protein**.
+        * Purpose: To detect a specific protein in a sample.
+        * Workflow: Proteins are separated by SDS-PAGE, transferred to a membrane, and probed with antibodies specific to the target protein (primary and labeled secondary antibodies).
+        * Application: Protein detection, quantification, and diagnostics.
+
+**Sanger Sequencing (Dideoxy Chain Termination Method):**
+The first-generation method for determining the nucleotide sequence of DNA.
+* **Principle**: Utilizes dideoxynucleoside triphosphates (ddNTPs), which lack the 3'-OH group. When a ddNTP is incorporated into a growing DNA strand, synthesis terminates.
+* **Method**: Four separate reactions are set up, each containing the template, primer, DNA polymerase, all four dNTPs, and a small amount of one specific ddNTP (ddATP, ddGTP, ddCTP, or ddTTP). This results in a collection of DNA fragments of different lengths, each ending with a specific ddNTP. The fragments are separated by gel electrophoresis, and the sequence is read from bottom to top.
+* **Modern Sanger**: Uses fluorescently labeled ddNTPs, allowing all four reactions to occur in a single tube and be read by a laser in an automated capillary electrophoresis machine.
+
+###
+Slide_ID: 9
+Module: 6 - Advanced Gene Manipulation
+Title: The CRISPR-Cas9 Revolution: Principles
+
+Content:
+CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats) is an adaptive immune system in bacteria and archaea. The CRISPR-Cas9 system has been repurposed into a powerful and versatile genome editing tool.
+**Core Components:**
+1.    **Cas9 (CRISPR-associated protein 9)**: An RNA-guided DNA endonuclease. It acts as the "molecular scissors" that cut the DNA. The most common is from *Streptococcus pyogenes* (SpCas9).
+2.    **Guide RNA (gRNA)**: A short synthetic RNA that directs the Cas9 nuclease to a specific target sequence in the genome. It consists of two parts:
+        * **crRNA (CRISPR RNA)**: A ~20 nucleotide sequence that is complementary to the target DNA sequence. This determines the specificity.
+        * **tracrRNA (trans-activating crRNA)**: A scaffold sequence that binds to the Cas9 protein.
+        * In the lab, these are combined into a single guide RNA (**sgRNA**).
+
+**Mechanism of Action:**
+1.    The Cas9 protein and the sgRNA are introduced into a cell.
+2.    The Cas9-sgRNA complex scans the genome for a DNA sequence that is complementary to the crRNA part of the guide.
+3.    The target sequence must be immediately followed by a specific short sequence called the **Protospacer Adjacent Motif (PAM)**. For SpCas9, the PAM sequence is 5'-NGG-3'. Cas9 will NOT bind or cut if there is no PAM sequence.
+4.    Once the complex binds to the target DNA and the PAM is present, the two nuclease domains (HNH and RuvC) of Cas9 each cleave one strand of the DNA, creating a **Double-Strand Break (DSB)**.
+
+###
+Slide_ID: 10
+Module: 6 - Advanced Gene Manipulation
+Title: CRISPR-Mediated Genome Editing: Outcomes & Applications
+
+Content:
+The cell's natural DNA repair mechanisms are harnessed to achieve the desired edit after the Cas9-induced DSB.
+**Two Major Repair Pathways:**
+1.    **Non-Homologous End Joining (NHEJ)**:
+        * The cell's default, error-prone repair mechanism.
+        * It directly ligates the broken DNA ends back together.
+        * Often results in small random insertions or deletions (**indels**).
+        * Outcome: If the indel occurs within a coding region, it can cause a frameshift mutation, leading to a premature stop codon and a non-functional protein. This is the primary method for creating a **gene knockout**.
+2.    **Homology-Directed Repair (HDR)**:
+        * A more precise repair mechanism that uses a homologous DNA template to repair the break.
+        * By providing an externally supplied **donor template** containing the desired genetic sequence flanked by "homology arms" (sequences matching the DNA on either side of the DSB), specific changes can be made.
+        * Outcome: Allows for precise **gene correction** (e.g., fixing a disease-causing mutation) or **gene knock-in** (e.g., inserting a new gene or a tag like GFP at a specific locus).
+        * HDR is much less efficient than NHEJ in most cell types.
+
+**Advanced CRISPR Systems:**
+* **Base Editing**: Fuses a catalytically impaired Cas9 (nicking one strand instead of cutting both) to a deaminase enzyme. Can directly convert one base pair to another (e.g., C:G to T:A) without creating a DSB. More precise, avoids indels.
+* **Prime Editing**: A "search-and-replace" technology. Fuses a Cas9 nickase to a reverse transcriptase and uses a prime editing guide RNA (pegRNA) that both specifies the target site and encodes the desired edit. Highly versatile, can perform all 12 types of point mutations, small insertions, and deletions without a DSB or donor template.
+
+**Applications:**
+* **Basic Research**: Creating knockout/knock-in cell lines and animal models to study gene function.
+* **Therapeutics**: Gene therapy to correct genetic disorders (e.g., sickle cell disease, ?-thalassemia, muscular dystrophy).
+* **Agriculture**: Developing crops with improved yield, drought resistance, and nutritional value.
+* **Diagnostics**: CRISPR-based diagnostic tools (e.g., SHERLOCK, DETECTR) for rapid detection of pathogens.
+
+###
+Slide_ID: 11
+Module: 7 - Applications & Ethics
+Title: Genetic Engineering in Medicine
+
+Content:
+**1. Production of Recombinant Pharmaceuticals:**
+* Using engineered microorganisms (*E. coli*, yeast) or mammalian cells (CHO cells) as "factories" to produce therapeutic proteins.
+* **Human Insulin**: First genetically engineered pharmaceutical. Previously sourced from pigs/cattle. Recombinant insulin is purer, less immunogenic, and has a scalable supply.
+* **Human Growth Hormone (HGH)**: Treats growth disorders. Recombinant version replaced extraction from cadaver pituitary glands, eliminating the risk of prion disease transmission.
+* **Factor VIII**: Blood-clotting factor for treating hemophilia A.
+* **Erythropoietin (EPO)**: Stimulates red blood cell production, used to treat anemia.
+* **Monoclonal Antibodies (mAbs)**: Used in cancer therapy and autoimmune disease treatment (e.g., Humira, Herceptin).
+* **Vaccines**: Subunit vaccines (e.g., Hepatitis B vaccine, HPV vaccine) produced by expressing a viral surface antigen in yeast. mRNA vaccines (e.g., COVID-19) are also a product of genetic engineering principles.
+
+**2. Gene Therapy:**
+* The introduction of genetic material into a patient's cells to treat or cure a disease.
+* **Somatic Gene Therapy**: Targets somatic (non-reproductive) cells. Genetic changes are not heritable.
+        * **Ex vivo**: Cells are removed from the patient, genetically modified in the lab, and then returned to the patient (e.g., CAR-T cell therapy for cancer, treatment for SCID and sickle cell disease).
+        * **In vivo**: The therapeutic gene is delivered directly into the patient's body, typically using a viral vector (e.g., AAV vectors used to treat spinal muscular atrophy and certain forms of blindness).
+* **Germline Gene Therapy**: Modifies reproductive cells (sperm, eggs, embryos). Genetic changes are heritable. Currently subject to a global moratorium for human applications due to profound ethical concerns.
+
+**3. Genetic Diagnostics:**
+* Techniques like PCR, qPCR, and DNA microarrays are used to diagnose infectious diseases, inherited disorders (e.g., cystic fibrosis), and determine genetic predispositions to diseases like cancer (e.g., BRCA1/2 testing).
+
+###
+Slide_ID: 12
+Module: 7 - Applications & Ethics
+Title: Ethical, Legal, and Social Implications (ELSI)
+
+Content:
+The power of genetic engineering necessitates careful consideration of its broader impact.
+**Ethical Concerns:**
+* **Safety**:
+        * Off-target effects of genome editors like CRISPR could lead to unintended mutations, potentially causing cancer.
+        * Long-term consequences of genetic modifications are still largely unknown.
+        * Environmental impact of releasing genetically modified organisms (GMOs).
+* **Human Germline Editing**:
+        * Edits to sperm, eggs, or embryos would be passed down to future generations, permanently altering the human gene pool.
+        * Raises concerns about "designer babies," enhancement vs. therapy, and exacerbating social inequalities.
+* **Equity and Access**: Will expensive genetic therapies be available only to the wealthy, widening the gap between the rich and poor?
+* **Consent**: Who provides consent for editing an embryo? How is informed consent handled for complex, lifelong gene therapies?
+* **Genetic Privacy**: How is genetic data stored and used? Risk of discrimination by employers or insurance companies based on genetic predispositions.
+
+**Legal and Regulatory Landscape:**
+* Varies significantly by country.
+* **Regulation of GMOs**: Strict regulations in the European Union vs. a product-based approach in the United States. Labeling of GM foods is a major point of debate.
+* **Regulation of Gene Therapy**: Regulated by bodies like the FDA (USA) and EMA (Europe). In India, regulated by the Genetic Engineering Appraisal Committee (GEAC).
+* **Patenting**: Can genes and genetically modified life be patented? This has been a contentious legal issue (e.g., Myriad Genetics case for BRCA genes).
+* A global consensus is needed, especially regarding human germline editing, to ensure responsible innovation and prevent misuse. The scientific community plays a critical role in leading these discussions.
+
+###
+Slide_ID: 13
+Module: 5 - Gene Libraries & Screening
+Title: Genomic vs. cDNA Libraries
+
+Content:
+A gene library is a collection of cloned DNA fragments from a single organism, stored and propagated in a population of microorganisms.
+
+**Genomic DNA Library:**
+* **Source DNA**: Total genomic DNA from an organism.
+* **Construction**:
+        1.    Isolate high molecular weight genomic DNA.
+        2.    Partially digest with a restriction enzyme or mechanically shear the DNA to create large, overlapping fragments.
+        3.    Ligate these fragments into a high-capacity vector (e.g., BAC, YAC).
+* **Content**: Represents the entire genome of the organism. Contains coding regions (exons), non-coding regions (introns), promoters, enhancers, and all other regulatory sequences.
+* **Key Feature**: The probability of finding a specific gene is the same regardless of the tissue source or its expression level.
+* **Application**: Used for genome sequencing, studying gene organization, and isolating regulatory elements.
+
+**Complementary DNA (cDNA) Library:**
+* **Source DNA**: mRNA isolated from a specific cell type or tissue at a specific time.
+* **Construction**:
+        1.    Isolate total mRNA. The poly-A tail is used for purification (oligo-dT beads).
+        2.    Synthesize a complementary DNA strand using **Reverse Transcriptase** with an oligo-dT primer. This creates an mRNA-DNA hybrid.
+        3.    Degrade the mRNA strand (e.g., with RNase H).
+        4.    Synthesize the second DNA strand using DNA Polymerase.
+        5.    Ligate the double-stranded cDNA into a cloning vector (e.g., a plasmid).
+* **Content**: Represents only the genes that were being actively transcribed (expressed) in the source cells. Contains **only exons** (no introns or promoter sequences).
+* **Key Feature**: The abundance of a particular cDNA in the library is proportional to the expression level of the corresponding gene in the source tissue.
+* **Application**: Used for discovering novel genes, studying gene expression (e.g., via RNA-Seq), and cloning the coding sequence of a gene for protein production.
+
+###
+Slide_ID: 14
+Module: 5 - Gene Libraries & Screening
+Title: Library Screening by Hybridization
+
+Content:
+Screening is the process of identifying and isolating a specific clone containing the gene of interest from a vast library. Colony hybridization is a common method.
+**Principle**: Uses a labeled DNA or RNA probe that is complementary to the target gene sequence. The probe will specifically bind (hybridize) to the clone containing the gene.
+
+**Workflow:**
+1.    **Plating**: The library (e.g., bacteria containing plasmids) is plated on a master agar plate so that each cell forms a distinct colony.
+2.    **Replica Plating**: A sterile membrane (e.g., nitrocellulose or nylon) is gently pressed onto the master plate to create a replica of the colonies. The master plate is stored for later retrieval of the desired colony.
+3.    **Lysis & Denaturation**: The membrane is treated with an alkaline solution (NaOH) to lyse the bacterial cells and denature the DNA, making it single-stranded.
+4.    **Fixation**: The single-stranded DNA is fixed to the membrane, usually by baking or UV cross-linking.
+5.    **Hybridization (Probing)**: The membrane is incubated in a solution containing a labeled probe.
+        * **Probe**: A short, single-stranded piece of DNA or RNA with a sequence complementary to the gene of interest.
+        * **Labeling**: The probe is tagged with a detectable marker, traditionally a radioactive isotope (e.g., ³²P) or more commonly now, a fluorescent dye or an enzyme (e.g., horseradish peroxidase).
+6.    **Washing**: The membrane is washed under specific conditions of temperature and salinity (stringency) to remove any non-specifically bound probe. High stringency washes ensure only perfectly matched probe-target hybrids remain.
+7.    **Detection**: The position of the bound probe is detected.
+        * For radioactive probes: Autoradiography (exposing the membrane to X-ray film).
+        * For fluorescent probes: Imaging with a laser scanner.
+        * The detected signal corresponds to the location of the colony containing the gene of interest.
+8.    **Isolation**: The positive colony is identified on the original master plate, picked, and cultured for large-scale plasmid isolation and analysis.
+
+###
+Slide_ID: 15
+Module: 6 - Gene Expression Systems
+Title: Prokaryotic Expression Systems: The Workhorse *E. coli*
+
+Content:
+For producing large quantities of a recombinant protein, the cloned gene must be expressed. *Escherichia coli* is the most widely used host for this purpose.
+**Advantages of *E. coli* System:**
+* **Well-Characterized Genetics**: Its genome and molecular biology are extensively understood.
+* **Rapid Growth**: Short doubling time (~20 minutes) allows for high cell densities and protein yield quickly.
+* **Low Cost**: Media and supplements are inexpensive.
+* **High Yield**: Can produce recombinant protein up to 30-50% of the total cellular protein.
+* **Ease of Transformation**: Well-established protocols for introducing foreign DNA.
+
+**Disadvantages and Challenges:**
+* **Lack of Post-Translational Modifications (PTMs)**: *E. coli* cannot perform PTMs common in eukaryotes, such as glycosylation, phosphorylation, or proper disulfide bond formation. This can result in a non-functional or immunogenic protein.
+* **Improper Protein Folding**: The reducing environment of the *E. coli* cytoplasm is not conducive to disulfide bond formation. Eukaryotic proteins may misfold.
+* **Inclusion Bodies**: High levels of expression can overwhelm the cell's folding machinery, leading to the aggregation of misfolded, insoluble protein into dense particles called inclusion bodies. Recovering active protein from these requires complex denaturation and refolding steps, which are often inefficient.
+* **Codon Bias**: The frequency of codon usage can differ between *E. coli* and the source organism of the gene. If the gene contains codons that are rare in *E. coli*, the corresponding tRNA may be depleted, stalling translation and reducing protein yield. This can be mitigated by using engineered *E. coli* strains that overexpress rare tRNAs (e.g., Rosetta strains).
+* **Endotoxin Contamination**: The outer membrane of *E. coli* contains lipopolysaccharides (LPS), or endotoxins, which are highly pyrogenic. For therapeutic proteins, all endotoxins must be meticulously removed, a costly and challenging process.
+
+###
+Slide_ID: 16
+Module: 6 - Gene Expression Systems
+Title: Eukaryotic Expression Systems
+
+Content:
+When correct protein folding and post-translational modifications are critical, eukaryotic expression systems are necessary.
+
+**1. Yeast (*Saccharomyces cerevisiae*, *Pichia pastoris*)**
+* **Advantages**:
+        * A unicellular eukaryote, combining the ease of microbial culture with eukaryotic protein processing capabilities.
+        * Performs PTMs like glycosylation, disulfide bond formation, and phosphorylation.
+        * Generally Recognized As Safe (GRAS) status.
+        * *Pichia pastoris* is particularly popular due to its strong, tightly regulated AOX1 promoter (induced by methanol) and its ability to secrete proteins, simplifying purification.
+* **Limitations**: Glycosylation patterns (high-mannose type) differ from those in mammalian cells, which can affect protein function or immunogenicity.
+
+**2. Insect Cells (Baculovirus Expression Vector System - BEVS)**
+* **Host Cells**: Typically from moths, such as Sf9 or Sf21 cells.
+* **Vector**: Based on the baculovirus, a virus that naturally infects insects. The gene of interest is cloned into a bacmid under the control of a very strong viral promoter (e.g., polyhedrin).
+* **Advantages**:
+        * Very high protein yields.
+        * Performs complex PTMs that are more similar to mammalian cells than yeast.
+        * Can express large proteins and protein complexes.
+* **Limitations**: More complex, slower, and more expensive than yeast systems. Glycosylation is still not identical to mammalian patterns.
+
+**3. Mammalian Cells (CHO, HEK293, COS)**
+* **Host Cells**: Chinese Hamster Ovary (CHO) cells are the industry standard for producing therapeutic proteins. Human Embryonic Kidney (HEK293) cells are used for high-yield transient expression.
+* **Advantages**:
+        * **The "gold standard"**. Provides the most authentic protein processing, including correct folding, PTMs (especially glycosylation), and assembly of multi-subunit proteins.
+        * Essential for producing many human therapeutics like monoclonal antibodies.
+* **Limitations**:
+        * Very slow growth rates.
+        * Complex and expensive culture media requirements.
+        * Lower protein yields compared to microbial or insect systems.
+        * Susceptible to viral contamination.
+
+###
+Slide_ID: 17
+Module: 6 - Gene Expression Systems
+Title: Expression Vectors: Engineering for Protein Production
+
+Content:
+An expression vector is a specialized plasmid or virus designed for high-level gene expression in a host cell. It has all the features of a cloning vector, plus additional elements to drive transcription and translation of the inserted gene.
+
+**Key Components of an Expression Vector:**
+
+1.    **Promoter**:
+        * A strong and often **inducible** promoter is crucial.
+        * **Constitutive promoters** are always "on", which can be toxic if the recombinant protein is harmful to the host.
+        * **Inducible promoters** are activated by a specific chemical inducer (e.g., IPTG for the *lac* promoter, arabinose for the *araBAD* promoter, methanol for the *AOX1* promoter in *Pichia*). This allows the cells to be grown to a high density first, and then protein production is turned on.
+        * Example: The **T7 promoter system** in *E. coli* strain BL21(DE3) is extremely strong and tightly regulated.
+
+2.    **Ribosome Binding Site (RBS)**:
+        * A sequence upstream of the start codon that is recognized by the ribosome, initiating translation.
+        * In prokaryotes, this is the **Shine-Dalgarno sequence**. The distance and sequence of the RBS are optimized for maximum expression.
+
+3.    **Transcription Terminator**:
+        * A sequence downstream of the gene that signals the end of transcription.
+        * Prevents read-through transcription and increases mRNA stability.
+
+4.    **Affinity Tag**:
+        * The vector often includes a sequence that can be fused to the N- or C-terminus of the recombinant protein.
+        * This tag allows for rapid, one-step purification of the protein from the cell lysate using affinity chromatography.
+        * Common tags include:
+                * **Polyhistidine-tag (His-tag)**: A stretch of 6-10 histidine residues that binds to nickel (Ni-NTA) or cobalt columns.
+                * **Glutathione S-transferase (GST-tag)**: A larger tag that binds to glutathione-agarose beads.
+                * **Maltose-binding protein (MBP-tag)**: Can also improve the solubility of the target protein.
+
+5.    **Protease Cleavage Site**:
+        * Often placed between the affinity tag and the protein. Allows the tag to be removed by a specific protease (e.g., Thrombin, TEV protease) after purification, yielding the pure, native protein.
+
+###
+Slide_ID: 18
+Module: 4 - Core Analytical Techniques (Advanced)
+Title: Next-Generation Sequencing (NGS): Principles
+
+Content:
+NGS, also known as massively parallel sequencing, represents a quantum leap from Sanger sequencing, allowing for the sequencing of millions to billions of DNA fragments simultaneously.
+**Core NGS Workflow (Illumina Example):**
+
+1.    **Library Preparation**:
+        * **Fragmentation**: The source DNA (genomic DNA, cDNA, etc.) is fragmented into a specific size range (e.g., 200-500 bp) by sonication or enzymatic digestion.
+        * **End Repair & A-tailing**: The fragmented ends are repaired to make them blunt, and a single adenine (A) base is added to the 3' ends.
+        * **Adapter Ligation**: Y-shaped DNA adapters are ligated to both ends of the fragments. These adapters contain sequences necessary for binding to the flow cell, primer binding sites for sequencing, and unique indexes (barcodes) for multiplexing (pooling multiple samples in one run).
+
+2.    **Clonal Amplification**:
+        * The library is loaded onto a **flow cell**, a glass slide with a lawn of covalently attached oligonucleotides that are complementary to the library adapters.
+        * **Bridge PCR**: Each library fragment binds to the flow cell and is amplified in place through PCR, creating a localized cluster of thousands of identical DNA molecules. Each cluster originates from a single DNA fragment.
+
+3.    **Sequencing by Synthesis (SBS)**:
+        * The core of the Illumina method.
+        * **Reversible Terminator Chemistry**: Four fluorescently labeled dNTPs are added, along with a polymerase. These dNTPs have a cleavable fluorescent dye and a reversible terminator on the 3'-OH group, so only one base can be added per cycle.
+        * **Imaging**: After adding one base, the reaction is paused, and the entire flow cell is imaged. A laser excites the fluorescent dyes, and the color of each cluster reveals which base was incorporated.
+        * **Cleavage**: The fluorescent dye and the 3' terminator are chemically cleaved, regenerating a free 3'-OH group.
+        * **Repeat**: The cycle of incorporation, imaging, and cleavage is repeated ~50-300 times, reading the sequence of every cluster on the flow cell base by base.
+
+**Key Outcome**: Generates millions of short sequence reads (50-300 bp). These reads are then aligned to a reference genome or assembled *de novo* using powerful bioinformatic tools to reconstruct the original sequence.
+
+###
+Slide_ID: 19
+Module: 4 - Core Analytical Techniques (Advanced)
+Title: Key NGS Applications: Transcriptomics & Epigenomics
+
+Content:
+NGS has enabled powerful methods to study gene expression and regulation on a genome-wide scale.
+
+**1. RNA-Seq (Whole Transcriptome Sequencing)**
+* **Purpose**: To quantify the abundance of every RNA transcript in a sample and to identify different transcript isoforms (from alternative splicing), gene fusions, and novel transcripts.
+* **Workflow**:
+        1.    Isolate RNA from a cell or tissue sample.
+        2.    Convert the RNA to a cDNA library (similar to making a cDNA library for cloning, but adapted for NGS).
+        3.    Sequence the cDNA library using an NGS platform.
+        4.    Align the resulting reads to a reference genome or transcriptome.
+* **Analysis**: The number of reads that map to a particular gene is directly proportional to that gene's expression level.
+* **Advantages over Microarrays**: Unbiased (doesn't require pre-designed probes), higher dynamic range, can detect novel transcripts and splicing variants. It provides a digital, quantitative measure of gene expression.
+
+**2. ChIP-Seq (Chromatin Immunoprecipitation Sequencing)**
+* **Purpose**: To identify the binding sites of a specific DNA-binding protein (e.g., a transcription factor, histone modification) across the entire genome.
+* **Workflow**:
+        1.    **Cross-linking**: Treat living cells with a chemical (e.g., formaldehyde) to covalently cross-link proteins to the DNA they are bound to.
+        2.    **Chromatin Shearing**: Lyse the cells and shear the chromatin into small fragments using sonication.
+        3.    **Immunoprecipitation (IP)**: Use an antibody specific to the target protein to "pull down" the protein along with the DNA fragments it is bound to.
+        4.    **Reverse Cross-links & Purify DNA**: Reverse the cross-links to release the DNA and purify it.
+        5.    **Sequencing**: Prepare a library from the purified DNA and sequence it using NGS.
+* **Analysis**: The resulting sequence reads are aligned to the reference genome. Regions with a high density of reads (peaks) represent the binding sites of the target protein. This helps in mapping gene regulatory networks.
+
+
+###
+Slide_ID: 20
+Module: 6 - Advanced Gene Manipulation
+Title: Site-Directed Mutagenesis: Precision Engineering
+
+Content:
+Site-directed mutagenesis (SDM) is a technique used to create specific, targeted changes (mutations) in a DNA sequence. It is a cornerstone of protein engineering and for studying gene/protein function.
+**Purpose**:
+* To study the function of a specific amino acid in a protein by changing it to another (e.g., to determine its role in the active site).
+* To improve protein properties, such as thermal stability, substrate specificity, or enzymatic activity.
+* To investigate the effect of a specific DNA mutation found in a patient.
+
+**PCR-Based SDM (e.g., QuikChange Method):**
+This is the most common method for introducing mutations into a plasmid.
+* **Principle**: Uses a pair of complementary mutagenic primers that contain the desired mutation (a base pair mismatch). These primers are used to amplify the entire plasmid via PCR.
+* **Workflow**:
+        1.    **Primer Design**: Design two primers that are complementary to each other and bind to the target site on opposite strands of the plasmid. The primers contain the desired mutation in the middle, flanked by ~15-20 bases of correct sequence on both sides.
+        2.    **PCR Amplification**: Perform a PCR reaction with a high-fidelity DNA polymerase, the template plasmid, and the mutagenic primers. The polymerase synthesizes new strands that incorporate the mutation. Since the primers are complementary, the reaction does not produce a linear product but rather replicates the entire circular plasmid, resulting in nicked circular strands.
+        3.    **Template Digestion**: The PCR product contains the original, methylated parent plasmid and the newly synthesized, unmethylated, mutated plasmid. To eliminate the parent plasmid, the reaction is treated with the restriction enzyme **DpnI**.
+        * **DpnI**: A special restriction enzyme that specifically recognizes and cleaves methylated and hemi-methylated DNA (GmA^TC sites). DNA isolated from most *E. coli* strains is methylated, whereas DNA synthesized in vitro by PCR is not.
+        4.    **Transformation**: The remaining nicked, circular, mutated dsDNA is transformed into highly competent *E. coli*. The nicks are repaired by the bacteria's own DNA repair machinery.
+* **Result**: The resulting colonies will contain the plasmid with the desired point mutation, which can be confirmed by DNA sequencing.
+
