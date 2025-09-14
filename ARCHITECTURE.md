@@ -1,4 +1,4 @@
-# AI Agent Architecture: The Genetics Tutor
+# AI Agent Architecture: The Slides Tutor
 
 This document outlines the architecture of the AI agent built to automate studying for the BT301 Genetic Engineering course.
 
