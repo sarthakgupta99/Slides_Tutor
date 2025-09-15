@@ -1,5 +1,5 @@
 LLM Interaction Logs
-This file contains a history of interactions with an AI assistant (Google Gemini) during the development of the "Genetics Tutor" AI Agent, as encouraged by the assignment guidelines.
+This file contains a history of interactions with an AI assistant (Google Gemini) during the development of the "Slides Tutor" AI Agent, as encouraged by the assignment guidelines.
 
 Session 1: Initial Setup & GPU Debugging
 My Prompt:
